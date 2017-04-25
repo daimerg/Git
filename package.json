@@ -1,0 +1,13 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba",
+  "main": "index.html",
+  "author": "Daimer",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.3.0"
+  }
+}
