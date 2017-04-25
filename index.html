@@ -3,8 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+    	.pleaceholder {
+    		width: 300px;
+    	}
+    </style>
   </head>
   <body>
+		<input type="text" class="placeholder">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+			(function($, undefined) {
+				$.fn.placeholder = function(text) {
+					return this.each(function(){
+						var $this = $(this);
+						$this.attr('placeholder', text)
+					});
+				}
+			})(jQuery);
 
+			$('.placeholder').placeholder('Ingrese campos');
+		</script>
   </body>
 </html>
